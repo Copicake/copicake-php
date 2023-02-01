@@ -1,0 +1,29 @@
+{
+    "name": "copicake/copicake",
+    "type": "library",
+    "description": "Copicake, developer-first API and #NoCode tools to generate images on the fly",
+    "require": {
+        "php-curl-class/php-curl-class": "^9.13"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Copicake\\": "src/"
+        },
+        "files": [
+            "src/utils/constant.php",
+            "src/models/Rendering.php",
+            "src/models/Changes.php",
+            "src/models/Options.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Chia-Lung Chen",
+            "email": "eragonj@eragonj.me"
+        }
+    ],
+    "license": "MIT"
+}
