@@ -13,10 +13,7 @@
             "Copicake\\": "src/"
         },
         "files": [
-            "src/utils/constant.php",
-            "src/models/Rendering.php",
-            "src/models/Changes.php",
-            "src/models/Options.php"
+            "src/utils/constant.php"
         ]
     },
     "authors": [

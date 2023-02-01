@@ -14,21 +14,21 @@ class CopicakeTest extends TestCase
 
   public function testGet()
   {
-    $r = $this->copicake->image->get("tzPTx9rT76pSMHKLIwLoNT4YC8Vw");
+    $r = $this->copicake->image->get("B2OztWEJCdeZAjD1z0lwTRlGizRT");
     var_dump($r);
   }
 
   public function testCreate()
   {
     $r = $this->copicake->image->create([
-      'template_id' => 'jfwrFJdR3z1eF8BcEhSnAFyhxgOq',
+      'template_id' => 'SZvbcJuiEQyVtpnnzgGJDrvmlL1M',
       'changes' => [
-        ['name' => 'text-9so09m', 'text' => 'hello world', 'fill' => '#ff0000'],
-        ['name' => 'image-yeavh7', 'src' => 'https://your_website.com/test.png'],
+        ['name' => 'text-qm1zmj', 'text' => 'hello world', 'fill' => '#ff0000'],
       ],
       'options' => [
-        'webhook_url' => 'https://your_website.com/webhook_url'
+        'webhook_url' => 'https://webhook.site/6182664f-8502-48d1-99f0-fe5963c61054'
       ]
     ]);
+    var_dump($r);
   }
 }

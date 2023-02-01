@@ -25,8 +25,7 @@ class CopicakeImage extends CopicakeBase
       if ($response->error) {
         throw new Exception($response->error);
       } else {
-        $rendering = new Rendering($response->data);
-        return $rendering;
+        return $response->data;
       }
     }
   }
@@ -57,8 +56,7 @@ class CopicakeImage extends CopicakeBase
       if ($response->error) {
         throw new Exception($response->error);
       } else {
-        $rendering = new Rendering($response->data);
-        return $rendering;
+        return $response->data;
       }
     }
   }
