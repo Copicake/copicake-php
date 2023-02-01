@@ -44,7 +44,7 @@ class CopicakeImage extends CopicakeBase
     }
   }
 
-  public function create($data)
+  public function create(mixed $data)
   {
     $curl = $this->getCurl();
     $curl->post(IMAGE_API_END_POINT . '/create', $data);
