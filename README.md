@@ -16,8 +16,6 @@ composer require copicake
 ## Initialization
 
 ```php
-<?php
-
 use Copicake\Copicake;
 
 $copicake = new Copicake("YOUR_API_KEY");
@@ -47,6 +45,8 @@ catch(Exception $exception) {
 }
 ```
 
+### Get an image
+
 #### get(`string` $renderingId)
 
 ```php
@@ -58,7 +58,15 @@ catch(Exception $exception) {
 }
 ```
 
+### Get an image (long polling)
+
 #### getUntilFinished(`string` $renderingId)
+
+Sometimes you may notice that your image is still under processing state, this is because the image is still being processed in the background by our servers.
+
+In this way, we provide another handy method called getUntilFinished() to get the image until the image is ready.
+
+Internally, this is just a wrapper of get() method with built-in retry mechanism. If after MAX_RETRY_TIMES and the image is still under processing state, we will throw an exception to let you know.
 
 ```php
 try {
